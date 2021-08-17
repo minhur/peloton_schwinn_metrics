@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Peleton to Echelon
-// @version      5.0
+// @version      5.1
 // @author       minhur
 // @match        https://members.onepeloton.com/*
 // @updateURL    https://github.com/minhur/peloton_echelon_metrics/raw/master/peloton_echelon.user.js
@@ -87,7 +87,7 @@
                 var a = [1,1,1,1,1,2,2,2,3,3,3,4,4,4,4,5,5,5,6,6,6,7,7,7,8,8,8,9,9,9,10,10,10,11,11,11,12,12,12,12,13,13,13,14,14,14,15,15,15,16,16,16,17,17,17,18,18,18,19,19,19,20,20,20,20,21,21,21,22,22,22,23,23,23,24,24,24,25,25,25,26,26,26,27,27,27,28,28,28,28,29,29,29,30,30,30,31,31,31,32,32],
                     o = Number(i.ride.duration),
                     e = document.createElement("div");
-                e.id = "cadresist", e.style = "width:100%; color:white; margin:-40px 0px 0px -30px; padding-right: 55px;", e.innerHTML = '<div id="cadresisttxt" style="width:100%;color:white;font-size:24px"></div><div style="margin-top:15px;width:100%; height:2px; background-color:#555555"><div id="cadresistprogress" style="width:0%;transition:990ms linear;height:4px;background-color:white"></div></div>', document.querySelector("div[data-test-id='videoSongContainer']").after(e);
+                e.id = "cadresist", e.style = "width:100%; color:white; margin:-27px 0px 0px -30px; padding-right: 55px;", e.innerHTML = '<div id="cadresisttxt" style="width:100%;color:white;font-size:24px"></div><div style="margin-top:15px;width:100%; height:2px; background-color:#555555"><div id="cadresistprogress" style="width:0%;transition:990ms linear;height:4px;background-color:white"></div></div>', document.querySelector("div[data-test-id='videoSongContainer']").after(e);
                 var c = document.getElementById("cadresisttxt"),
                     d = document.getElementById("cadresistprogress");
                 if (!i.instructor_cues.length) return e.innerHTML = "Class does not have target metrics.", void setTimeout(function() {
